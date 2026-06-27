@@ -1,0 +1,1 @@
+document.querySelectorAll('.card').forEach((c,i)=>{c.style.opacity=0;c.style.transform='translateY(20px)';setTimeout(()=>{c.style.transition='all .6s';c.style.opacity=1;c.style.transform='translateY(0)'},250+i*150)});
