@@ -1,2 +1,1 @@
-# thekartargroup
-Official website of The Kartar Group
+Copy your logo files into the images folder with names: kartar-group-logo.png, kwa-logo.jpg, coral-reef-logo.png. Upload to GitHub and enable GitHub Pages.
