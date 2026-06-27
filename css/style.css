@@ -1,1 +1,126 @@
-body{margin:0;background:#061326;color:#f4f4f4;font-family:Arial,sans-serif}.hero{text-align:center;padding:60px 20px}.logo{max-width:180px}.tag{color:#C8A55A;font-weight:bold}.intro{max-width:700px;margin:auto}.biz{text-align:center;padding:40px 20px}.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}.card{width:280px;background:#0d2238;border:1px solid #C8A55A55;border-radius:12px;padding:20px}.card img{max-width:120px;max-height:70px;object-fit:contain}.notice,footer{text-align:center;padding:30px 20px}footer{border-top:1px solid #ffffff22}@media(max-width:768px){.card{width:90%}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Inter,sans-serif;
+background:radial-gradient(circle at top,#18385d 0%,#081524 45%,#04101c 100%);
+color:#fff;
+}
+.hero{
+text-align:center;
+padding:35px 20px 45px;
+position:relative;
+overflow:hidden;
+}
+.glow{
+position:absolute;
+width:450px;
+height:450px;
+left:50%;
+top:-60px;
+transform:translateX(-50%);
+background:rgba(212,180,106,.12);
+filter:blur(100px);
+}
+.hero>*{position:relative;z-index:2}
+.main-logo{
+width:300px;
+max-width:80%;
+margin-bottom:20px;
+}
+h1{
+font-family:'Lora',serif;
+font-size:56px;
+font-weight:600;
+letter-spacing:1px;
+margin-bottom:14px;
+}
+.tagline{
+color:#d4b46a;
+font-size:20px;
+font-weight:600;
+margin-bottom:20px;
+}
+.intro{
+max-width:760px;
+margin:auto;
+font-size:20px;
+line-height:1.7;
+color:#ddd;
+}
+.businesses{
+padding:70px 20px;
+}
+.businesses h2,.notice h2{
+font-family:'Lora',serif;
+font-size:42px;
+color:#d4b46a;
+text-align:center;
+margin-bottom:50px;
+}
+.grid{
+max-width:1250px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+.card{
+background:rgba(255,255,255,.04);
+border:1px solid rgba(212,180,106,.35);
+border-radius:22px;
+padding:40px 35px;
+text-align:center;
+min-height:360px;
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+border-color:#d4b46a;
+}
+.logo-box{
+height:150px;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:10px;
+}
+.logo-box img{
+max-height:120px;
+max-width:220px;
+object-fit:contain;
+}
+.card h3{
+font-family:'Lora',serif;
+font-size:30px;
+font-weight:600;
+margin:10px 0 15px;
+}
+.card p{
+font-size:18px;
+line-height:1.6;
+color:#ddd;
+}
+.notice{
+padding:70px 20px;
+text-align:center;
+}
+.notice p{
+font-size:18px;
+color:#ddd;
+}
+footer{
+padding:35px 20px;
+border-top:1px solid rgba(255,255,255,.12);
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+@media(max-width:768px){
+h1{font-size:38px}
+.businesses h2,.notice h2{font-size:32px}
+.main-logo{width:220px}
+.intro{font-size:17px}
+.card{min-height:auto}
+footer{flex-direction:column;gap:12px;text-align:center}
+}
