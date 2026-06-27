@@ -1,140 +1,20 @@
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-font-family:Inter,sans-serif;
-background:radial-gradient(circle at top,#18385d 0%,#081524 45%,#04101c 100%);
-color:#fff;
-}
-.hero{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    min-height: 70vh;
-
-    padding: 20px 20px 40px;
-    text-align: center;
-    overflow: hidden;
-}
-
-Then change the glow to:
-.glow{
-    position:absolute;
-    width:500px;
-    height:500px;
-
-    top:-180px;
-    left:50%;
-
-    transform:translateX(-50%);
-
-    background:rgba(212,180,106,.10);
-
-    filter:blur(120px);
-
-    z-index:0;
-}
-.hero>*{position:relative;z-index:2}
-.main-logo{
-width:340px;
-margin-bottom:18px;
-}
-h1{
-font-family:'Lora',serif;
-font-size:56px;
-font-weight:600;
-letter-spacing:1px;
-margin-bottom:14px;
-}
-.tagline{
-color:#d4b46a;
-font-size:20px;
-font-weight:600;
-margin-bottom:20px;
-}
-.intro{
-max-width:760px;
-margin:auto;
-font-size:20px;
-line-height:1.7;
-color:#ddd;
-}
-.businesses{
-padding:70px 20px;
-}
-.businesses h2,.notice h2{
-font-family:'Lora',serif;
-font-size:42px;
-color:#d4b46a;
-text-align:center;
-margin-bottom:50px;
-}
-.grid{
-max-width:1250px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-}
-.card{
-background:rgba(255,255,255,.04);
-border:1px solid rgba(212,180,106,.35);
-border-radius:22px;
-padding:40px 35px;
-text-align:center;
-min-height:360px;
-transition:.3s;
-}
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 40px rgba(0,0,0,.35);
-border-color:#d4b46a;
-}
-.logo-box{
-height:150px;
-display:flex;
-justify-content:center;
-align-items:center;
-margin-bottom:10px;
-}
-.logo-box img{
-max-height:120px;
-max-width:220px;
-object-fit:contain;
-}
-.card h3{
-font-family:'Lora',serif;
-font-size:30px;
-font-weight:600;
-margin:10px 0 15px;
-}
-.card p{
-font-size:18px;
-line-height:1.6;
-color:#ddd;
-}
-.notice{
-padding:70px 20px;
-text-align:center;
-}
-.notice p{
-font-size:18px;
-color:#ddd;
-}
-footer{
-padding:35px 20px;
-border-top:1px solid rgba(255,255,255,.12);
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-}
-@media(max-width:768px){
-h1{font-size:38px}
-.businesses h2,.notice h2{font-size:32px}
-.main-logo{width:220px}
-.intro{font-size:17px}
-.card{min-height:auto}
-footer{flex-direction:column;gap:12px;text-align:center}
-}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:#071524;color:#f7f7f7;overflow-x:hidden}
+.bg-glow{position:fixed;inset:auto;top:-180px;left:50%;transform:translateX(-50%);width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.22),transparent 70%);filter:blur(50px);pointer-events:none}
+.hero{text-align:center;padding:28px 20px 50px}
+.hero-logo{width:340px;max-width:82%;display:block;margin:0 auto 18px}
+h1{font-family:Lora,serif;font-size:52px;font-weight:600;letter-spacing:1px}
+.tagline{margin:10px 0;color:#d4b46a;font-size:20px}
+.gold-line{width:110px;height:3px;background:#c9a227;margin:18px auto 22px;border-radius:3px}
+.intro{max-width:760px;margin:auto;color:#d9d9d9;font-size:18px;line-height:1.7}
+.section{padding:60px 20px}
+.section h2,.notice h2{font-family:Lora,serif;font-size:38px;color:#d4b46a;text-align:center;margin-bottom:40px}
+.cards{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(201,162,39,.25);border-radius:20px;padding:36px;min-height:360px;text-align:center;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:#c9a227;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.logo{height:150px;display:flex;align-items:center;justify-content:center}
+.logo img{max-height:120px;max-width:220px;object-fit:contain}
+.card h3{font-family:Lora,serif;font-size:28px;margin:16px 0 14px}
+.card p{font-size:17px;color:#d6d6d6;line-height:1.6}
+.notice{text-align:center;padding:60px 20px}.notice p{max-width:650px;margin:14px auto;color:#ddd}
+footer{padding:30px 20px;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;align-items:center;gap:10px;color:#ddd}.copy{margin-top:10px;font-size:14px;color:#999}
+@media(max-width:768px){h1{font-size:36px}.hero-logo{width:240px}.section h2,.notice h2{font-size:30px}.card{min-height:auto}}
